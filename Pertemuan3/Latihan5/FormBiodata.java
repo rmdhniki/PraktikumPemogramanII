@@ -11,22 +11,22 @@ public class FormBiodata extends JFrame {
 
         // Membuat komponen-komponen yang akan digunakan
         JLabel headerLabel = new JLabel("Form Biodata", JLabel.CENTER);
-        JLabel nameLabel = new JLabel("Nama:");
-        JLabel phoneLabel = new JLabel("Nomor HP:");
-        JLabel genderLabel = new JLabel("Jenis Kelamin:");
+        JLabel namaLabel = new JLabel("Nama:");
+        JLabel nomorhpLabel = new JLabel("Nomor HP:");
+        JLabel jeniskelaminLabel = new JLabel("Jenis Kelamin:");
 
-        JTextField nameTextField = new JTextField(15);
-        JTextField phoneTextField = new JTextField(15);
+        JTextField namaTextField = new JTextField(15);
+        JTextField nomorhpTextField = new JTextField(15);
 
-        JRadioButton maleRadioButton = new JRadioButton("Laki-Laki");
-        JRadioButton femaleRadioButton = new JRadioButton("Perempuan");
-        ButtonGroup genderGroup = new ButtonGroup();
-        genderGroup.add(maleRadioButton);
-        genderGroup.add(femaleRadioButton);
+        JRadioButton lakilakiRadioButton = new JRadioButton("Laki-Laki");
+        JRadioButton perempuanRadioButton = new JRadioButton("Perempuan");
+        ButtonGroup jeniskelaminGroup = new ButtonGroup();
+        jeniskelaminGroup.add(lakilakiRadioButton);
+        jeniskelaminGroup.add(perempuanRadioButton);
 
         JCheckBox foreignCheckBox = new JCheckBox("Warga Negara Asing");
 
-        JButton saveButton = new JButton("Simpan");
+        JButton simpanButton = new JButton("Simpan");
 
         // Mengatur panel dengan GridBagLayout
         JPanel panel = new JPanel(new GridBagLayout());
@@ -46,48 +46,48 @@ public class FormBiodata extends JFrame {
         gbc.gridy = 1;
         gbc.gridwidth = 1;
         gbc.anchor = GridBagConstraints.WEST;
-        panel.add(nameLabel, gbc);
+        panel.add(namaLabel, gbc);
 
         // Label Jenis Kelamin di sebelah Nama
         gbc.gridx = 1;
         gbc.gridy = 1;
         gbc.anchor = GridBagConstraints.WEST;
-        panel.add(genderLabel, gbc);
+        panel.add(jeniskelaminLabel, gbc);
 
         // Input Nama (di bawah label Nama)
         gbc.gridx = 0;
         gbc.gridy = 2;
         gbc.gridwidth = 1;
         gbc.anchor = GridBagConstraints.WEST;
-        panel.add(nameTextField, gbc);
+        panel.add(namaTextField, gbc);
 
         // RadioButton Laki-laki (di bawah label Jenis Kelamin)
         gbc.gridx = 1;
         gbc.gridy = 2;
         gbc.gridwidth = 1;
         gbc.anchor = GridBagConstraints.WEST;
-        panel.add(maleRadioButton, gbc);
+        panel.add(lakilakiRadioButton, gbc);
 
         // Label Nomor HP (di bawah input Nama)
         gbc.gridx = 0;
         gbc.gridy = 3;
         gbc.gridwidth = 1;
         gbc.anchor = GridBagConstraints.WEST;
-        panel.add(phoneLabel, gbc);
+        panel.add(nomorhpLabel, gbc);
 
         // RadioButton Perempuan (di bawah Laki-laki)
         gbc.gridx = 1;
         gbc.gridy = 3;
         gbc.gridwidth = 1;
         gbc.anchor = GridBagConstraints.WEST;
-        panel.add(femaleRadioButton, gbc);
+        panel.add(perempuanRadioButton, gbc);
 
         // Input Nomor HP (di bawah label Nomor HP)
         gbc.gridx = 0;
         gbc.gridy = 4;
         gbc.gridwidth = 1;
         gbc.anchor = GridBagConstraints.WEST;
-        panel.add(phoneTextField, gbc);
+        panel.add(nomorhpTextField, gbc);
 
         // Checkbox Warga Negara Asing (di bawah RadioButton Perempuan)
         gbc.gridx = 1;
@@ -101,7 +101,7 @@ public class FormBiodata extends JFrame {
         gbc.gridy = 5;
         gbc.gridwidth = 2;
         gbc.anchor = GridBagConstraints.CENTER;
-        panel.add(saveButton, gbc);
+        panel.add(simpanButton, gbc);
 
         // Menambahkan panel ke jendela
         this.add(panel);
