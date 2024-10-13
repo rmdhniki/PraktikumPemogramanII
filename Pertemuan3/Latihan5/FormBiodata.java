@@ -1,3 +1,5 @@
+package Pertemuan3.Latihan5;
+
 import javax.swing.*;
 import java.awt.*;
 

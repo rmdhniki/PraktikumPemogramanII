@@ -1,4 +1,4 @@
-package Pertemuan3.Latihan1;
+package Pertemuan3.Latihan3;
 
 import java.awt.*;
 import javax.swing.*;
